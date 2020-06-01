@@ -6,10 +6,17 @@
   <title>Angular Clock</title>
 </head>
 <body>
-  <div id="clock"> {{ fecha | date:formato }} </div>
-  <!-- <input type="radio" id="formato24H" name="formato" (click)="formato = 'HH:mm:ss'" checked>
-  <label for="formato24H">24H</label><br>
-  <input type="radio" id="formato12H" name="formato" (click)="formato = 'hh:mm:ss a'">
-  <label for="formato12H">12H</label><br> -->
+  
+  <div id="clock"> 
+    {{ fecha | date:formato }} 
+      <div id="formats">
+        <input type="radio" id="formato24H" name="formato" (click)="formato = 'HH:mm:ss'" checked>
+        <label for="formato24H">24H</label>
+        <input type="radio" id="formato12H" name="formato" (click)="formato = 'hh:mm:ss a'">
+        <label for="formato12H">12H</label>
+      </div>
+    
+  </div>
+
 </body>
 </html>
